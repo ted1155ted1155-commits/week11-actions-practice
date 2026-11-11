@@ -18,7 +18,7 @@ st.title("AI 이미지 객체 탐지")
 st.write("이미지를 선택한 뒤 탐지 시작을 눌러 결과를 확인하세요.")
 uploaded = st.file_uploader("이미지 선택", type=["jpg", "jpeg", "png"])
 
-if uploaded is not None:
+if uploaded is not None
     image = ImageOps.exif_transpose(Image.open(uploaded)).convert("RGB")
     left, right = st.columns(2)
     left.image(image, caption="원본 이미지", width="stretch")
